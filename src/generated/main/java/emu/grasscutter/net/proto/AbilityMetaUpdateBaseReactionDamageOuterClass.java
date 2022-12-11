@@ -19,16 +19,16 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk3300_OIPAEGAMCLI = 2;</code>
-     * @return The unk3300OIPAEGAMCLI.
+     * <code>uint32 reaction_type = 2;</code>
+     * @return The reactionType.
      */
-    int getUnk3300OIPAEGAMCLI();
+    int getReactionType();
 
     /**
-     * <code>uint32 Unk3300_CAKEJCJKHOA = 13;</code>
-     * @return The unk3300CAKEJCJKHOA.
+     * <code>uint32 source_caster_id = 13;</code>
+     * @return The sourceCasterId.
      */
-    int getUnk3300CAKEJCJKHOA();
+    int getSourceCasterId();
 
     /**
      * <code>.AbilityString ability_name = 6;</code>
@@ -107,7 +107,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
               break;
             case 16: {
 
-              unk3300OIPAEGAMCLI_ = input.readUInt32();
+              reactionType_ = input.readUInt32();
               break;
             }
             case 50: {
@@ -125,7 +125,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
             }
             case 104: {
 
-              unk3300CAKEJCJKHOA_ = input.readUInt32();
+              sourceCasterId_ = input.readUInt32();
               break;
             }
             case 114: {
@@ -173,26 +173,26 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
               emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage.class, emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage.Builder.class);
     }
 
-    public static final int UNK3300_OIPAEGAMCLI_FIELD_NUMBER = 2;
-    private int unk3300OIPAEGAMCLI_;
+    public static final int REACTION_TYPE_FIELD_NUMBER = 2;
+    private int reactionType_;
     /**
-     * <code>uint32 Unk3300_OIPAEGAMCLI = 2;</code>
-     * @return The unk3300OIPAEGAMCLI.
+     * <code>uint32 reaction_type = 2;</code>
+     * @return The reactionType.
      */
     @java.lang.Override
-    public int getUnk3300OIPAEGAMCLI() {
-      return unk3300OIPAEGAMCLI_;
+    public int getReactionType() {
+      return reactionType_;
     }
 
-    public static final int UNK3300_CAKEJCJKHOA_FIELD_NUMBER = 13;
-    private int unk3300CAKEJCJKHOA_;
+    public static final int SOURCE_CASTER_ID_FIELD_NUMBER = 13;
+    private int sourceCasterId_;
     /**
-     * <code>uint32 Unk3300_CAKEJCJKHOA = 13;</code>
-     * @return The unk3300CAKEJCJKHOA.
+     * <code>uint32 source_caster_id = 13;</code>
+     * @return The sourceCasterId.
      */
     @java.lang.Override
-    public int getUnk3300CAKEJCJKHOA() {
-      return unk3300CAKEJCJKHOA_;
+    public int getSourceCasterId() {
+      return sourceCasterId_;
     }
 
     public static final int ABILITY_NAME_FIELD_NUMBER = 6;
@@ -261,14 +261,14 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300OIPAEGAMCLI_ != 0) {
-        output.writeUInt32(2, unk3300OIPAEGAMCLI_);
+      if (reactionType_ != 0) {
+        output.writeUInt32(2, reactionType_);
       }
       if (abilityName_ != null) {
         output.writeMessage(6, getAbilityName());
       }
-      if (unk3300CAKEJCJKHOA_ != 0) {
-        output.writeUInt32(13, unk3300CAKEJCJKHOA_);
+      if (sourceCasterId_ != 0) {
+        output.writeUInt32(13, sourceCasterId_);
       }
       if (globalValueKey_ != null) {
         output.writeMessage(14, getGlobalValueKey());
@@ -282,17 +282,17 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300OIPAEGAMCLI_ != 0) {
+      if (reactionType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, unk3300OIPAEGAMCLI_);
+          .computeUInt32Size(2, reactionType_);
       }
       if (abilityName_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getAbilityName());
       }
-      if (unk3300CAKEJCJKHOA_ != 0) {
+      if (sourceCasterId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, unk3300CAKEJCJKHOA_);
+          .computeUInt32Size(13, sourceCasterId_);
       }
       if (globalValueKey_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -313,10 +313,10 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage other = (emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage) obj;
 
-      if (getUnk3300OIPAEGAMCLI()
-          != other.getUnk3300OIPAEGAMCLI()) return false;
-      if (getUnk3300CAKEJCJKHOA()
-          != other.getUnk3300CAKEJCJKHOA()) return false;
+      if (getReactionType()
+          != other.getReactionType()) return false;
+      if (getSourceCasterId()
+          != other.getSourceCasterId()) return false;
       if (hasAbilityName() != other.hasAbilityName()) return false;
       if (hasAbilityName()) {
         if (!getAbilityName()
@@ -338,10 +338,10 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK3300_OIPAEGAMCLI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300OIPAEGAMCLI();
-      hash = (37 * hash) + UNK3300_CAKEJCJKHOA_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300CAKEJCJKHOA();
+      hash = (37 * hash) + REACTION_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getReactionType();
+      hash = (37 * hash) + SOURCE_CASTER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSourceCasterId();
       if (hasAbilityName()) {
         hash = (37 * hash) + ABILITY_NAME_FIELD_NUMBER;
         hash = (53 * hash) + getAbilityName().hashCode();
@@ -483,9 +483,9 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3300OIPAEGAMCLI_ = 0;
+        reactionType_ = 0;
 
-        unk3300CAKEJCJKHOA_ = 0;
+        sourceCasterId_ = 0;
 
         if (abilityNameBuilder_ == null) {
           abilityName_ = null;
@@ -525,8 +525,8 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage result = new emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage(this);
-        result.unk3300OIPAEGAMCLI_ = unk3300OIPAEGAMCLI_;
-        result.unk3300CAKEJCJKHOA_ = unk3300CAKEJCJKHOA_;
+        result.reactionType_ = reactionType_;
+        result.sourceCasterId_ = sourceCasterId_;
         if (abilityNameBuilder_ == null) {
           result.abilityName_ = abilityName_;
         } else {
@@ -585,11 +585,11 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage other) {
         if (other == emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage.getDefaultInstance()) return this;
-        if (other.getUnk3300OIPAEGAMCLI() != 0) {
-          setUnk3300OIPAEGAMCLI(other.getUnk3300OIPAEGAMCLI());
+        if (other.getReactionType() != 0) {
+          setReactionType(other.getReactionType());
         }
-        if (other.getUnk3300CAKEJCJKHOA() != 0) {
-          setUnk3300CAKEJCJKHOA(other.getUnk3300CAKEJCJKHOA());
+        if (other.getSourceCasterId() != 0) {
+          setSourceCasterId(other.getSourceCasterId());
         }
         if (other.hasAbilityName()) {
           mergeAbilityName(other.getAbilityName());
@@ -626,64 +626,64 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         return this;
       }
 
-      private int unk3300OIPAEGAMCLI_ ;
+      private int reactionType_ ;
       /**
-       * <code>uint32 Unk3300_OIPAEGAMCLI = 2;</code>
-       * @return The unk3300OIPAEGAMCLI.
+       * <code>uint32 reaction_type = 2;</code>
+       * @return The reactionType.
        */
       @java.lang.Override
-      public int getUnk3300OIPAEGAMCLI() {
-        return unk3300OIPAEGAMCLI_;
+      public int getReactionType() {
+        return reactionType_;
       }
       /**
-       * <code>uint32 Unk3300_OIPAEGAMCLI = 2;</code>
-       * @param value The unk3300OIPAEGAMCLI to set.
+       * <code>uint32 reaction_type = 2;</code>
+       * @param value The reactionType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300OIPAEGAMCLI(int value) {
+      public Builder setReactionType(int value) {
         
-        unk3300OIPAEGAMCLI_ = value;
+        reactionType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_OIPAEGAMCLI = 2;</code>
+       * <code>uint32 reaction_type = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300OIPAEGAMCLI() {
+      public Builder clearReactionType() {
         
-        unk3300OIPAEGAMCLI_ = 0;
+        reactionType_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk3300CAKEJCJKHOA_ ;
+      private int sourceCasterId_ ;
       /**
-       * <code>uint32 Unk3300_CAKEJCJKHOA = 13;</code>
-       * @return The unk3300CAKEJCJKHOA.
+       * <code>uint32 source_caster_id = 13;</code>
+       * @return The sourceCasterId.
        */
       @java.lang.Override
-      public int getUnk3300CAKEJCJKHOA() {
-        return unk3300CAKEJCJKHOA_;
+      public int getSourceCasterId() {
+        return sourceCasterId_;
       }
       /**
-       * <code>uint32 Unk3300_CAKEJCJKHOA = 13;</code>
-       * @param value The unk3300CAKEJCJKHOA to set.
+       * <code>uint32 source_caster_id = 13;</code>
+       * @param value The sourceCasterId to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300CAKEJCJKHOA(int value) {
+      public Builder setSourceCasterId(int value) {
         
-        unk3300CAKEJCJKHOA_ = value;
+        sourceCasterId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_CAKEJCJKHOA = 13;</code>
+       * <code>uint32 source_caster_id = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300CAKEJCJKHOA() {
+      public Builder clearSourceCasterId() {
         
-        unk3300CAKEJCJKHOA_ = 0;
+        sourceCasterId_ = 0;
         onChanged();
         return this;
       }
@@ -993,12 +993,12 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)AbilityMetaUpdateBaseReactionDamage.pr" +
-      "oto\032\023AbilityString.proto\"\257\001\n#AbilityMeta" +
-      "UpdateBaseReactionDamage\022\033\n\023Unk3300_OIPA" +
-      "EGAMCLI\030\002 \001(\r\022\033\n\023Unk3300_CAKEJCJKHOA\030\r \001" +
-      "(\r\022$\n\014ability_name\030\006 \001(\0132\016.AbilityString" +
-      "\022(\n\020global_value_key\030\016 \001(\0132\016.AbilityStri" +
-      "ngB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "oto\032\023AbilityString.proto\"\246\001\n#AbilityMeta" +
+      "UpdateBaseReactionDamage\022\025\n\rreaction_typ" +
+      "e\030\002 \001(\r\022\030\n\020source_caster_id\030\r \001(\r\022$\n\014abi" +
+      "lity_name\030\006 \001(\0132\016.AbilityString\022(\n\020globa" +
+      "l_value_key\030\016 \001(\0132\016.AbilityStringB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1010,7 +1010,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
     internal_static_AbilityMetaUpdateBaseReactionDamage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaUpdateBaseReactionDamage_descriptor,
-        new java.lang.String[] { "Unk3300OIPAEGAMCLI", "Unk3300CAKEJCJKHOA", "AbilityName", "GlobalValueKey", });
+        new java.lang.String[] { "ReactionType", "SourceCasterId", "AbilityName", "GlobalValueKey", });
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
   }
 

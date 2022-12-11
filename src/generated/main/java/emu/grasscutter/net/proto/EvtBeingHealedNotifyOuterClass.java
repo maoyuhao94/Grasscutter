@@ -19,16 +19,16 @@ public final class EvtBeingHealedNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float Unk3300_LCLOFCCIJKH = 2;</code>
-     * @return The unk3300LCLOFCCIJKH.
+     * <code>float real_heal_amount = 2;</code>
+     * @return The realHealAmount.
      */
-    float getUnk3300LCLOFCCIJKH();
+    float getRealHealAmount();
 
     /**
-     * <code>float Unk3300_ECNBKHHADDJ = 3;</code>
-     * @return The unk3300ECNBKHHADDJ.
+     * <code>float heal_amount = 3;</code>
+     * @return The healAmount.
      */
-    float getUnk3300ECNBKHHADDJ();
+    float getHealAmount();
 
     /**
      * <code>uint32 target_id = 4;</code>
@@ -99,12 +99,12 @@ public final class EvtBeingHealedNotifyOuterClass {
               break;
             case 21: {
 
-              unk3300LCLOFCCIJKH_ = input.readFloat();
+              realHealAmount_ = input.readFloat();
               break;
             }
             case 29: {
 
-              unk3300ECNBKHHADDJ_ = input.readFloat();
+              healAmount_ = input.readFloat();
               break;
             }
             case 32: {
@@ -149,26 +149,26 @@ public final class EvtBeingHealedNotifyOuterClass {
               emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify.class, emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify.Builder.class);
     }
 
-    public static final int UNK3300_LCLOFCCIJKH_FIELD_NUMBER = 2;
-    private float unk3300LCLOFCCIJKH_;
+    public static final int REAL_HEAL_AMOUNT_FIELD_NUMBER = 2;
+    private float realHealAmount_;
     /**
-     * <code>float Unk3300_LCLOFCCIJKH = 2;</code>
-     * @return The unk3300LCLOFCCIJKH.
+     * <code>float real_heal_amount = 2;</code>
+     * @return The realHealAmount.
      */
     @java.lang.Override
-    public float getUnk3300LCLOFCCIJKH() {
-      return unk3300LCLOFCCIJKH_;
+    public float getRealHealAmount() {
+      return realHealAmount_;
     }
 
-    public static final int UNK3300_ECNBKHHADDJ_FIELD_NUMBER = 3;
-    private float unk3300ECNBKHHADDJ_;
+    public static final int HEAL_AMOUNT_FIELD_NUMBER = 3;
+    private float healAmount_;
     /**
-     * <code>float Unk3300_ECNBKHHADDJ = 3;</code>
-     * @return The unk3300ECNBKHHADDJ.
+     * <code>float heal_amount = 3;</code>
+     * @return The healAmount.
      */
     @java.lang.Override
-    public float getUnk3300ECNBKHHADDJ() {
-      return unk3300ECNBKHHADDJ_;
+    public float getHealAmount() {
+      return healAmount_;
     }
 
     public static final int TARGET_ID_FIELD_NUMBER = 4;
@@ -207,11 +207,11 @@ public final class EvtBeingHealedNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300LCLOFCCIJKH_ != 0F) {
-        output.writeFloat(2, unk3300LCLOFCCIJKH_);
+      if (realHealAmount_ != 0F) {
+        output.writeFloat(2, realHealAmount_);
       }
-      if (unk3300ECNBKHHADDJ_ != 0F) {
-        output.writeFloat(3, unk3300ECNBKHHADDJ_);
+      if (healAmount_ != 0F) {
+        output.writeFloat(3, healAmount_);
       }
       if (targetId_ != 0) {
         output.writeUInt32(4, targetId_);
@@ -228,13 +228,13 @@ public final class EvtBeingHealedNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300LCLOFCCIJKH_ != 0F) {
+      if (realHealAmount_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, unk3300LCLOFCCIJKH_);
+          .computeFloatSize(2, realHealAmount_);
       }
-      if (unk3300ECNBKHHADDJ_ != 0F) {
+      if (healAmount_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, unk3300ECNBKHHADDJ_);
+          .computeFloatSize(3, healAmount_);
       }
       if (targetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -259,12 +259,12 @@ public final class EvtBeingHealedNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify other = (emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify) obj;
 
-      if (java.lang.Float.floatToIntBits(getUnk3300LCLOFCCIJKH())
+      if (java.lang.Float.floatToIntBits(getRealHealAmount())
           != java.lang.Float.floatToIntBits(
-              other.getUnk3300LCLOFCCIJKH())) return false;
-      if (java.lang.Float.floatToIntBits(getUnk3300ECNBKHHADDJ())
+              other.getRealHealAmount())) return false;
+      if (java.lang.Float.floatToIntBits(getHealAmount())
           != java.lang.Float.floatToIntBits(
-              other.getUnk3300ECNBKHHADDJ())) return false;
+              other.getHealAmount())) return false;
       if (getTargetId()
           != other.getTargetId()) return false;
       if (getSourceId()
@@ -280,12 +280,12 @@ public final class EvtBeingHealedNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK3300_LCLOFCCIJKH_FIELD_NUMBER;
+      hash = (37 * hash) + REAL_HEAL_AMOUNT_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3300LCLOFCCIJKH());
-      hash = (37 * hash) + UNK3300_ECNBKHHADDJ_FIELD_NUMBER;
+          getRealHealAmount());
+      hash = (37 * hash) + HEAL_AMOUNT_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3300ECNBKHHADDJ());
+          getHealAmount());
       hash = (37 * hash) + TARGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetId();
       hash = (37 * hash) + SOURCE_ID_FIELD_NUMBER;
@@ -433,9 +433,9 @@ public final class EvtBeingHealedNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3300LCLOFCCIJKH_ = 0F;
+        realHealAmount_ = 0F;
 
-        unk3300ECNBKHHADDJ_ = 0F;
+        healAmount_ = 0F;
 
         targetId_ = 0;
 
@@ -467,8 +467,8 @@ public final class EvtBeingHealedNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify buildPartial() {
         emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify result = new emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify(this);
-        result.unk3300LCLOFCCIJKH_ = unk3300LCLOFCCIJKH_;
-        result.unk3300ECNBKHHADDJ_ = unk3300ECNBKHHADDJ_;
+        result.realHealAmount_ = realHealAmount_;
+        result.healAmount_ = healAmount_;
         result.targetId_ = targetId_;
         result.sourceId_ = sourceId_;
         onBuilt();
@@ -519,11 +519,11 @@ public final class EvtBeingHealedNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify other) {
         if (other == emu.grasscutter.net.proto.EvtBeingHealedNotifyOuterClass.EvtBeingHealedNotify.getDefaultInstance()) return this;
-        if (other.getUnk3300LCLOFCCIJKH() != 0F) {
-          setUnk3300LCLOFCCIJKH(other.getUnk3300LCLOFCCIJKH());
+        if (other.getRealHealAmount() != 0F) {
+          setRealHealAmount(other.getRealHealAmount());
         }
-        if (other.getUnk3300ECNBKHHADDJ() != 0F) {
-          setUnk3300ECNBKHHADDJ(other.getUnk3300ECNBKHHADDJ());
+        if (other.getHealAmount() != 0F) {
+          setHealAmount(other.getHealAmount());
         }
         if (other.getTargetId() != 0) {
           setTargetId(other.getTargetId());
@@ -560,64 +560,64 @@ public final class EvtBeingHealedNotifyOuterClass {
         return this;
       }
 
-      private float unk3300LCLOFCCIJKH_ ;
+      private float realHealAmount_ ;
       /**
-       * <code>float Unk3300_LCLOFCCIJKH = 2;</code>
-       * @return The unk3300LCLOFCCIJKH.
+       * <code>float real_heal_amount = 2;</code>
+       * @return The realHealAmount.
        */
       @java.lang.Override
-      public float getUnk3300LCLOFCCIJKH() {
-        return unk3300LCLOFCCIJKH_;
+      public float getRealHealAmount() {
+        return realHealAmount_;
       }
       /**
-       * <code>float Unk3300_LCLOFCCIJKH = 2;</code>
-       * @param value The unk3300LCLOFCCIJKH to set.
+       * <code>float real_heal_amount = 2;</code>
+       * @param value The realHealAmount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300LCLOFCCIJKH(float value) {
+      public Builder setRealHealAmount(float value) {
         
-        unk3300LCLOFCCIJKH_ = value;
+        realHealAmount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3300_LCLOFCCIJKH = 2;</code>
+       * <code>float real_heal_amount = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300LCLOFCCIJKH() {
+      public Builder clearRealHealAmount() {
         
-        unk3300LCLOFCCIJKH_ = 0F;
+        realHealAmount_ = 0F;
         onChanged();
         return this;
       }
 
-      private float unk3300ECNBKHHADDJ_ ;
+      private float healAmount_ ;
       /**
-       * <code>float Unk3300_ECNBKHHADDJ = 3;</code>
-       * @return The unk3300ECNBKHHADDJ.
+       * <code>float heal_amount = 3;</code>
+       * @return The healAmount.
        */
       @java.lang.Override
-      public float getUnk3300ECNBKHHADDJ() {
-        return unk3300ECNBKHHADDJ_;
+      public float getHealAmount() {
+        return healAmount_;
       }
       /**
-       * <code>float Unk3300_ECNBKHHADDJ = 3;</code>
-       * @param value The unk3300ECNBKHHADDJ to set.
+       * <code>float heal_amount = 3;</code>
+       * @param value The healAmount to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300ECNBKHHADDJ(float value) {
+      public Builder setHealAmount(float value) {
         
-        unk3300ECNBKHHADDJ_ = value;
+        healAmount_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3300_ECNBKHHADDJ = 3;</code>
+       * <code>float heal_amount = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300ECNBKHHADDJ() {
+      public Builder clearHealAmount() {
         
-        unk3300ECNBKHHADDJ_ = 0F;
+        healAmount_ = 0F;
         onChanged();
         return this;
       }
@@ -750,11 +750,11 @@ public final class EvtBeingHealedNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032EvtBeingHealedNotify.proto\"v\n\024EvtBeing" +
-      "HealedNotify\022\033\n\023Unk3300_LCLOFCCIJKH\030\002 \001(" +
-      "\002\022\033\n\023Unk3300_ECNBKHHADDJ\030\003 \001(\002\022\021\n\ttarget" +
-      "_id\030\004 \001(\r\022\021\n\tsource_id\030\006 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\032EvtBeingHealedNotify.proto\"k\n\024EvtBeing" +
+      "HealedNotify\022\030\n\020real_heal_amount\030\002 \001(\002\022\023" +
+      "\n\013heal_amount\030\003 \001(\002\022\021\n\ttarget_id\030\004 \001(\r\022\021" +
+      "\n\tsource_id\030\006 \001(\rB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -765,7 +765,7 @@ public final class EvtBeingHealedNotifyOuterClass {
     internal_static_EvtBeingHealedNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtBeingHealedNotify_descriptor,
-        new java.lang.String[] { "Unk3300LCLOFCCIJKH", "Unk3300ECNBKHHADDJ", "TargetId", "SourceId", });
+        new java.lang.String[] { "RealHealAmount", "HealAmount", "TargetId", "SourceId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

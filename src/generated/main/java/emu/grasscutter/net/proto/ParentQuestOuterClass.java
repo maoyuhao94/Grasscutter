@@ -163,10 +163,10 @@ public final class ParentQuestOuterClass {
         int key);
 
     /**
-     * <code>uint32 Unk3300_PCIHJLPPHNJ = 14;</code>
-     * @return The unk3300PCIHJLPPHNJ.
+     * <code>uint32 quest_var_seq = 14;</code>
+     * @return The questVarSeq.
      */
-    int getUnk3300PCIHJLPPHNJ();
+    int getQuestVarSeq();
   }
   /**
    * Protobuf type {@code ParentQuest}
@@ -304,7 +304,7 @@ public final class ParentQuestOuterClass {
             }
             case 112: {
 
-              unk3300PCIHJLPPHNJ_ = input.readUInt32();
+              questVarSeq_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -635,15 +635,15 @@ public final class ParentQuestOuterClass {
       return map.get(key);
     }
 
-    public static final int UNK3300_PCIHJLPPHNJ_FIELD_NUMBER = 14;
-    private int unk3300PCIHJLPPHNJ_;
+    public static final int QUEST_VAR_SEQ_FIELD_NUMBER = 14;
+    private int questVarSeq_;
     /**
-     * <code>uint32 Unk3300_PCIHJLPPHNJ = 14;</code>
-     * @return The unk3300PCIHJLPPHNJ.
+     * <code>uint32 quest_var_seq = 14;</code>
+     * @return The questVarSeq.
      */
     @java.lang.Override
-    public int getUnk3300PCIHJLPPHNJ() {
-      return unk3300PCIHJLPPHNJ_;
+    public int getQuestVarSeq() {
+      return questVarSeq_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -695,8 +695,8 @@ public final class ParentQuestOuterClass {
       if (isRandom_ != false) {
         output.writeBool(12, isRandom_);
       }
-      if (unk3300PCIHJLPPHNJ_ != 0) {
-        output.writeUInt32(14, unk3300PCIHJLPPHNJ_);
+      if (questVarSeq_ != 0) {
+        output.writeUInt32(14, questVarSeq_);
       }
       if (parentQuestState_ != 0) {
         output.writeUInt32(15, parentQuestState_);
@@ -762,9 +762,9 @@ public final class ParentQuestOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(12, isRandom_);
       }
-      if (unk3300PCIHJLPPHNJ_ != 0) {
+      if (questVarSeq_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, unk3300PCIHJLPPHNJ_);
+          .computeUInt32Size(14, questVarSeq_);
       }
       if (parentQuestState_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -808,8 +808,8 @@ public final class ParentQuestOuterClass {
           != other.getIsFinished()) return false;
       if (!internalGetTimeVarMap().equals(
           other.internalGetTimeVarMap())) return false;
-      if (getUnk3300PCIHJLPPHNJ()
-          != other.getUnk3300PCIHJLPPHNJ()) return false;
+      if (getQuestVarSeq()
+          != other.getQuestVarSeq()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -854,8 +854,8 @@ public final class ParentQuestOuterClass {
         hash = (37 * hash) + TIME_VAR_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetTimeVarMap().hashCode();
       }
-      hash = (37 * hash) + UNK3300_PCIHJLPPHNJ_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300PCIHJLPPHNJ();
+      hash = (37 * hash) + QUEST_VAR_SEQ_FIELD_NUMBER;
+      hash = (53 * hash) + getQuestVarSeq();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1044,7 +1044,7 @@ public final class ParentQuestOuterClass {
         isFinished_ = false;
 
         internalGetMutableTimeVarMap().clear();
-        unk3300PCIHJLPPHNJ_ = 0;
+        questVarSeq_ = 0;
 
         return this;
       }
@@ -1108,7 +1108,7 @@ public final class ParentQuestOuterClass {
         result.isFinished_ = isFinished_;
         result.timeVarMap_ = internalGetTimeVarMap();
         result.timeVarMap_.makeImmutable();
-        result.unk3300PCIHJLPPHNJ_ = unk3300PCIHJLPPHNJ_;
+        result.questVarSeq_ = questVarSeq_;
         onBuilt();
         return result;
       }
@@ -1239,8 +1239,8 @@ public final class ParentQuestOuterClass {
         }
         internalGetMutableTimeVarMap().mergeFrom(
             other.internalGetTimeVarMap());
-        if (other.getUnk3300PCIHJLPPHNJ() != 0) {
-          setUnk3300PCIHJLPPHNJ(other.getUnk3300PCIHJLPPHNJ());
+        if (other.getQuestVarSeq() != 0) {
+          setQuestVarSeq(other.getQuestVarSeq());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2233,33 +2233,33 @@ public final class ParentQuestOuterClass {
         return this;
       }
 
-      private int unk3300PCIHJLPPHNJ_ ;
+      private int questVarSeq_ ;
       /**
-       * <code>uint32 Unk3300_PCIHJLPPHNJ = 14;</code>
-       * @return The unk3300PCIHJLPPHNJ.
+       * <code>uint32 quest_var_seq = 14;</code>
+       * @return The questVarSeq.
        */
       @java.lang.Override
-      public int getUnk3300PCIHJLPPHNJ() {
-        return unk3300PCIHJLPPHNJ_;
+      public int getQuestVarSeq() {
+        return questVarSeq_;
       }
       /**
-       * <code>uint32 Unk3300_PCIHJLPPHNJ = 14;</code>
-       * @param value The unk3300PCIHJLPPHNJ to set.
+       * <code>uint32 quest_var_seq = 14;</code>
+       * @param value The questVarSeq to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300PCIHJLPPHNJ(int value) {
+      public Builder setQuestVarSeq(int value) {
         
-        unk3300PCIHJLPPHNJ_ = value;
+        questVarSeq_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_PCIHJLPPHNJ = 14;</code>
+       * <code>uint32 quest_var_seq = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300PCIHJLPPHNJ() {
+      public Builder clearQuestVarSeq() {
         
-        unk3300PCIHJLPPHNJ_ = 0;
+        questVarSeq_ = 0;
         onChanged();
         return this;
       }
@@ -2337,7 +2337,7 @@ public final class ParentQuestOuterClass {
     java.lang.String[] descriptorData = {
       "\n\021ParentQuest.proto\032\020ChildQuest.proto\032\027I" +
       "nferencePageInfo.proto\032\033ParentQuestRando" +
-      "mInfo.proto\"\231\003\n\013ParentQuest\022/\n\023inference" +
+      "mInfo.proto\"\223\003\n\013ParentQuest\022/\n\023inference" +
       "_page_list\030\005 \003(\0132\022.InferencePageInfo\022\021\n\t" +
       "quest_var\030\007 \003(\005\022\021\n\tvideo_key\030\013 \001(\004\022\032\n\022pa" +
       "rent_quest_state\030\017 \001(\r\022+\n\013random_info\030\t " +
@@ -2345,10 +2345,10 @@ public final class ParentQuestOuterClass {
       "est_id\030\003 \001(\r\022\021\n\tis_random\030\014 \001(\010\022%\n\020child" +
       "_quest_list\030\010 \003(\0132\013.ChildQuest\022\023\n\013is_fin" +
       "ished\030\001 \001(\010\0222\n\014time_var_map\030\002 \003(\0132\034.Pare" +
-      "ntQuest.TimeVarMapEntry\022\033\n\023Unk3300_PCIHJ" +
-      "LPPHNJ\030\016 \001(\r\0321\n\017TimeVarMapEntry\022\013\n\003key\030\001" +
-      " \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "ntQuest.TimeVarMapEntry\022\025\n\rquest_var_seq" +
+      "\030\016 \001(\r\0321\n\017TimeVarMapEntry\022\013\n\003key\030\001 \001(\r\022\r" +
+      "\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2362,7 +2362,7 @@ public final class ParentQuestOuterClass {
     internal_static_ParentQuest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ParentQuest_descriptor,
-        new java.lang.String[] { "InferencePageList", "QuestVar", "VideoKey", "ParentQuestState", "RandomInfo", "ParentQuestId", "IsRandom", "ChildQuestList", "IsFinished", "TimeVarMap", "Unk3300PCIHJLPPHNJ", });
+        new java.lang.String[] { "InferencePageList", "QuestVar", "VideoKey", "ParentQuestState", "RandomInfo", "ParentQuestId", "IsRandom", "ChildQuestList", "IsFinished", "TimeVarMap", "QuestVarSeq", });
     internal_static_ParentQuest_TimeVarMapEntry_descriptor =
       internal_static_ParentQuest_descriptor.getNestedTypes().get(0);
     internal_static_ParentQuest_TimeVarMapEntry_fieldAccessorTable = new

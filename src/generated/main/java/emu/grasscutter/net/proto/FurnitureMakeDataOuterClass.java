@@ -49,7 +49,7 @@ public final class FurnitureMakeDataOuterClass {
     int getDurTime();
 
     /**
-     * <code>uint32 accelerate_time = 7;</code>
+     * <code>fixed32 accelerate_time = 7;</code>
      * @return The accelerateTime.
      */
     int getAccelerateTime();
@@ -114,9 +114,9 @@ public final class FurnitureMakeDataOuterClass {
               index_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 61: {
 
-              accelerateTime_ = input.readUInt32();
+              accelerateTime_ = input.readFixed32();
               break;
             }
             case 64: {
@@ -219,7 +219,7 @@ public final class FurnitureMakeDataOuterClass {
     public static final int ACCELERATE_TIME_FIELD_NUMBER = 7;
     private int accelerateTime_;
     /**
-     * <code>uint32 accelerate_time = 7;</code>
+     * <code>fixed32 accelerate_time = 7;</code>
      * @return The accelerateTime.
      */
     @java.lang.Override
@@ -251,7 +251,7 @@ public final class FurnitureMakeDataOuterClass {
         output.writeUInt32(6, index_);
       }
       if (accelerateTime_ != 0) {
-        output.writeUInt32(7, accelerateTime_);
+        output.writeFixed32(7, accelerateTime_);
       }
       if (durTime_ != 0) {
         output.writeUInt32(8, durTime_);
@@ -282,7 +282,7 @@ public final class FurnitureMakeDataOuterClass {
       }
       if (accelerateTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, accelerateTime_);
+          .computeFixed32Size(7, accelerateTime_);
       }
       if (durTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -771,7 +771,7 @@ public final class FurnitureMakeDataOuterClass {
 
       private int accelerateTime_ ;
       /**
-       * <code>uint32 accelerate_time = 7;</code>
+       * <code>fixed32 accelerate_time = 7;</code>
        * @return The accelerateTime.
        */
       @java.lang.Override
@@ -779,7 +779,7 @@ public final class FurnitureMakeDataOuterClass {
         return accelerateTime_;
       }
       /**
-       * <code>uint32 accelerate_time = 7;</code>
+       * <code>fixed32 accelerate_time = 7;</code>
        * @param value The accelerateTime to set.
        * @return This builder for chaining.
        */
@@ -790,7 +790,7 @@ public final class FurnitureMakeDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 accelerate_time = 7;</code>
+       * <code>fixed32 accelerate_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearAccelerateTime() {
@@ -870,7 +870,7 @@ public final class FurnitureMakeDataOuterClass {
       "akeData\022\022\n\nbegin_time\030\001 \001(\007\022\021\n\tavatar_id" +
       "\030\005 \001(\r\022\017\n\007make_id\030\n \001(\r\022\r\n\005index\030\006 \001(\r\022\020" +
       "\n\010dur_time\030\010 \001(\r\022\027\n\017accelerate_time\030\007 \001(" +
-      "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\007B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
