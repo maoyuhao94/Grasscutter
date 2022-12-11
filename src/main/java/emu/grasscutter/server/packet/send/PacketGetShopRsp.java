@@ -42,9 +42,10 @@ public class PacketGetShopRsp extends BasePacket {
                         .setEndTime(info.getEndTime())
                         .setMinLevel(info.getMinLevel())
                         .setMaxLevel(info.getMaxLevel())
-                        .setMcoin(info.getMcoin())
+//                        .setMcoin(info.getMcoin())
                         .setDisableType(info.getDisableType())
-                        .setSecondarySheetId(info.getSecondarySheetId());
+//                        .setSecondarySheetId(info.getSecondarySheetId())
+                        ;
                 if (info.getCostItemList() != null) {
                     goods.addAllCostItemList(info.getCostItemList().stream().map(x -> ItemParamOuterClass.ItemParam.newBuilder().setItemId(x.getId()).setCount(x.getCount()).build()).collect(Collectors.toList()));
                 }

@@ -13,7 +13,7 @@ import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
 import emu.grasscutter.net.proto.RetcodeOuterClass;
 
 public class PacketDoGachaRsp extends BasePacket {
-	
+
 	public PacketDoGachaRsp(GachaBanner banner, List<GachaItem> list, PlayerGachaBannerInfo gachaInfo) {
 		super(PacketOpcodes.DoGachaRsp);
 
@@ -28,9 +28,9 @@ public class PacketDoGachaRsp extends BasePacket {
 				.setGachaType(banner.getGachaType())
 				.setGachaScheduleId(banner.getScheduleId())
 				.setGachaTimes(list.size())
-				.setNewGachaRandom(12345)
+//				.setNewGachaRandom(12345)
 				.setLeftGachaTimes(leftGachaTimes)
-	            .setGachaTimesLimit(gachaTimesLimit)
+//	            .setGachaTimesLimit(gachaTimesLimit)
 				.setCostItemId(costItem.getId())
 	            .setCostItemNum(costItem.getCount())
 	            .setTenCostItemId(costItem10.getId())
@@ -38,11 +38,11 @@ public class PacketDoGachaRsp extends BasePacket {
 	            .addAllGachaItemList(list);
 
 		if(banner.hasEpitomized()) {
-			rsp.setWishItemId(gachaInfo.getWishItemId())
-				.setWishProgress(gachaInfo.getFailedChosenItemPulls())
-				.setWishMaxProgress(banner.getWishMaxProgress());
+//			rsp.setWishItemId(gachaInfo.getWishItemId())
+//				.setWishProgress(gachaInfo.getFailedChosenItemPulls())
+//				.setWishMaxProgress(banner.getWishMaxProgress());
 		}
-		
+
 		this.setData(rsp.build());
 	}
 
@@ -52,7 +52,7 @@ public class PacketDoGachaRsp extends BasePacket {
 		DoGachaRsp p = DoGachaRsp.newBuilder()
 				.setRetcode(RetcodeOuterClass.Retcode.RET_SVR_ERROR_VALUE)
 				.build();
-		
+
 		this.setData(p);
 	}
 
