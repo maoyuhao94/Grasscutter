@@ -19,16 +19,16 @@ public final class AbilityMetaElementReactionVisualOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 Unk3300_PHKFGIHELFG = 6;</code>
-     * @return The unk3300PHKFGIHELFG.
+     * <code>uint32 element_source_type = 6;</code>
+     * @return The elementSourceType.
      */
-    int getUnk3300PHKFGIHELFG();
+    int getElementSourceType();
 
     /**
-     * <code>uint32 Unk3300_DGBGNEHDODI = 1;</code>
-     * @return The unk3300DGBGNEHDODI.
+     * <code>uint32 element_reactor_type = 1;</code>
+     * @return The elementReactorType.
      */
-    int getUnk3300DGBGNEHDODI();
+    int getElementReactorType();
 
     /**
      * <code>int32 hit_index = 14;</code>
@@ -37,10 +37,10 @@ public final class AbilityMetaElementReactionVisualOuterClass {
     int getHitIndex();
 
     /**
-     * <code>uint32 Unk3300_OGILJCJPHPB = 2;</code>
-     * @return The unk3300OGILJCJPHPB.
+     * <code>uint32 element_reaction_type = 2;</code>
+     * @return The elementReactionType.
      */
-    int getUnk3300OGILJCJPHPB();
+    int getElementReactionType();
   }
   /**
    * Protobuf type {@code AbilityMetaElementReactionVisual}
@@ -89,17 +89,17 @@ public final class AbilityMetaElementReactionVisualOuterClass {
               break;
             case 8: {
 
-              unk3300DGBGNEHDODI_ = input.readUInt32();
+              elementReactorType_ = input.readUInt32();
               break;
             }
             case 16: {
 
-              unk3300OGILJCJPHPB_ = input.readUInt32();
+              elementReactionType_ = input.readUInt32();
               break;
             }
             case 48: {
 
-              unk3300PHKFGIHELFG_ = input.readUInt32();
+              elementSourceType_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -139,26 +139,26 @@ public final class AbilityMetaElementReactionVisualOuterClass {
               emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual.class, emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual.Builder.class);
     }
 
-    public static final int UNK3300_PHKFGIHELFG_FIELD_NUMBER = 6;
-    private int unk3300PHKFGIHELFG_;
+    public static final int ELEMENT_SOURCE_TYPE_FIELD_NUMBER = 6;
+    private int elementSourceType_;
     /**
-     * <code>uint32 Unk3300_PHKFGIHELFG = 6;</code>
-     * @return The unk3300PHKFGIHELFG.
+     * <code>uint32 element_source_type = 6;</code>
+     * @return The elementSourceType.
      */
     @java.lang.Override
-    public int getUnk3300PHKFGIHELFG() {
-      return unk3300PHKFGIHELFG_;
+    public int getElementSourceType() {
+      return elementSourceType_;
     }
 
-    public static final int UNK3300_DGBGNEHDODI_FIELD_NUMBER = 1;
-    private int unk3300DGBGNEHDODI_;
+    public static final int ELEMENT_REACTOR_TYPE_FIELD_NUMBER = 1;
+    private int elementReactorType_;
     /**
-     * <code>uint32 Unk3300_DGBGNEHDODI = 1;</code>
-     * @return The unk3300DGBGNEHDODI.
+     * <code>uint32 element_reactor_type = 1;</code>
+     * @return The elementReactorType.
      */
     @java.lang.Override
-    public int getUnk3300DGBGNEHDODI() {
-      return unk3300DGBGNEHDODI_;
+    public int getElementReactorType() {
+      return elementReactorType_;
     }
 
     public static final int HIT_INDEX_FIELD_NUMBER = 14;
@@ -172,15 +172,15 @@ public final class AbilityMetaElementReactionVisualOuterClass {
       return hitIndex_;
     }
 
-    public static final int UNK3300_OGILJCJPHPB_FIELD_NUMBER = 2;
-    private int unk3300OGILJCJPHPB_;
+    public static final int ELEMENT_REACTION_TYPE_FIELD_NUMBER = 2;
+    private int elementReactionType_;
     /**
-     * <code>uint32 Unk3300_OGILJCJPHPB = 2;</code>
-     * @return The unk3300OGILJCJPHPB.
+     * <code>uint32 element_reaction_type = 2;</code>
+     * @return The elementReactionType.
      */
     @java.lang.Override
-    public int getUnk3300OGILJCJPHPB() {
-      return unk3300OGILJCJPHPB_;
+    public int getElementReactionType() {
+      return elementReactionType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,14 +197,14 @@ public final class AbilityMetaElementReactionVisualOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300DGBGNEHDODI_ != 0) {
-        output.writeUInt32(1, unk3300DGBGNEHDODI_);
+      if (elementReactorType_ != 0) {
+        output.writeUInt32(1, elementReactorType_);
       }
-      if (unk3300OGILJCJPHPB_ != 0) {
-        output.writeUInt32(2, unk3300OGILJCJPHPB_);
+      if (elementReactionType_ != 0) {
+        output.writeUInt32(2, elementReactionType_);
       }
-      if (unk3300PHKFGIHELFG_ != 0) {
-        output.writeUInt32(6, unk3300PHKFGIHELFG_);
+      if (elementSourceType_ != 0) {
+        output.writeUInt32(6, elementSourceType_);
       }
       if (hitIndex_ != 0) {
         output.writeInt32(14, hitIndex_);
@@ -218,17 +218,17 @@ public final class AbilityMetaElementReactionVisualOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300DGBGNEHDODI_ != 0) {
+      if (elementReactorType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, unk3300DGBGNEHDODI_);
+          .computeUInt32Size(1, elementReactorType_);
       }
-      if (unk3300OGILJCJPHPB_ != 0) {
+      if (elementReactionType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, unk3300OGILJCJPHPB_);
+          .computeUInt32Size(2, elementReactionType_);
       }
-      if (unk3300PHKFGIHELFG_ != 0) {
+      if (elementSourceType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, unk3300PHKFGIHELFG_);
+          .computeUInt32Size(6, elementSourceType_);
       }
       if (hitIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -249,14 +249,14 @@ public final class AbilityMetaElementReactionVisualOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual other = (emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual) obj;
 
-      if (getUnk3300PHKFGIHELFG()
-          != other.getUnk3300PHKFGIHELFG()) return false;
-      if (getUnk3300DGBGNEHDODI()
-          != other.getUnk3300DGBGNEHDODI()) return false;
+      if (getElementSourceType()
+          != other.getElementSourceType()) return false;
+      if (getElementReactorType()
+          != other.getElementReactorType()) return false;
       if (getHitIndex()
           != other.getHitIndex()) return false;
-      if (getUnk3300OGILJCJPHPB()
-          != other.getUnk3300OGILJCJPHPB()) return false;
+      if (getElementReactionType()
+          != other.getElementReactionType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,14 +268,14 @@ public final class AbilityMetaElementReactionVisualOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UNK3300_PHKFGIHELFG_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300PHKFGIHELFG();
-      hash = (37 * hash) + UNK3300_DGBGNEHDODI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300DGBGNEHDODI();
+      hash = (37 * hash) + ELEMENT_SOURCE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementSourceType();
+      hash = (37 * hash) + ELEMENT_REACTOR_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementReactorType();
       hash = (37 * hash) + HIT_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getHitIndex();
-      hash = (37 * hash) + UNK3300_OGILJCJPHPB_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300OGILJCJPHPB();
+      hash = (37 * hash) + ELEMENT_REACTION_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementReactionType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -409,13 +409,13 @@ public final class AbilityMetaElementReactionVisualOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        unk3300PHKFGIHELFG_ = 0;
+        elementSourceType_ = 0;
 
-        unk3300DGBGNEHDODI_ = 0;
+        elementReactorType_ = 0;
 
         hitIndex_ = 0;
 
-        unk3300OGILJCJPHPB_ = 0;
+        elementReactionType_ = 0;
 
         return this;
       }
@@ -443,10 +443,10 @@ public final class AbilityMetaElementReactionVisualOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual result = new emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual(this);
-        result.unk3300PHKFGIHELFG_ = unk3300PHKFGIHELFG_;
-        result.unk3300DGBGNEHDODI_ = unk3300DGBGNEHDODI_;
+        result.elementSourceType_ = elementSourceType_;
+        result.elementReactorType_ = elementReactorType_;
         result.hitIndex_ = hitIndex_;
-        result.unk3300OGILJCJPHPB_ = unk3300OGILJCJPHPB_;
+        result.elementReactionType_ = elementReactionType_;
         onBuilt();
         return result;
       }
@@ -495,17 +495,17 @@ public final class AbilityMetaElementReactionVisualOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual other) {
         if (other == emu.grasscutter.net.proto.AbilityMetaElementReactionVisualOuterClass.AbilityMetaElementReactionVisual.getDefaultInstance()) return this;
-        if (other.getUnk3300PHKFGIHELFG() != 0) {
-          setUnk3300PHKFGIHELFG(other.getUnk3300PHKFGIHELFG());
+        if (other.getElementSourceType() != 0) {
+          setElementSourceType(other.getElementSourceType());
         }
-        if (other.getUnk3300DGBGNEHDODI() != 0) {
-          setUnk3300DGBGNEHDODI(other.getUnk3300DGBGNEHDODI());
+        if (other.getElementReactorType() != 0) {
+          setElementReactorType(other.getElementReactorType());
         }
         if (other.getHitIndex() != 0) {
           setHitIndex(other.getHitIndex());
         }
-        if (other.getUnk3300OGILJCJPHPB() != 0) {
-          setUnk3300OGILJCJPHPB(other.getUnk3300OGILJCJPHPB());
+        if (other.getElementReactionType() != 0) {
+          setElementReactionType(other.getElementReactionType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -536,64 +536,64 @@ public final class AbilityMetaElementReactionVisualOuterClass {
         return this;
       }
 
-      private int unk3300PHKFGIHELFG_ ;
+      private int elementSourceType_ ;
       /**
-       * <code>uint32 Unk3300_PHKFGIHELFG = 6;</code>
-       * @return The unk3300PHKFGIHELFG.
+       * <code>uint32 element_source_type = 6;</code>
+       * @return The elementSourceType.
        */
       @java.lang.Override
-      public int getUnk3300PHKFGIHELFG() {
-        return unk3300PHKFGIHELFG_;
+      public int getElementSourceType() {
+        return elementSourceType_;
       }
       /**
-       * <code>uint32 Unk3300_PHKFGIHELFG = 6;</code>
-       * @param value The unk3300PHKFGIHELFG to set.
+       * <code>uint32 element_source_type = 6;</code>
+       * @param value The elementSourceType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300PHKFGIHELFG(int value) {
+      public Builder setElementSourceType(int value) {
         
-        unk3300PHKFGIHELFG_ = value;
+        elementSourceType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_PHKFGIHELFG = 6;</code>
+       * <code>uint32 element_source_type = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300PHKFGIHELFG() {
+      public Builder clearElementSourceType() {
         
-        unk3300PHKFGIHELFG_ = 0;
+        elementSourceType_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk3300DGBGNEHDODI_ ;
+      private int elementReactorType_ ;
       /**
-       * <code>uint32 Unk3300_DGBGNEHDODI = 1;</code>
-       * @return The unk3300DGBGNEHDODI.
+       * <code>uint32 element_reactor_type = 1;</code>
+       * @return The elementReactorType.
        */
       @java.lang.Override
-      public int getUnk3300DGBGNEHDODI() {
-        return unk3300DGBGNEHDODI_;
+      public int getElementReactorType() {
+        return elementReactorType_;
       }
       /**
-       * <code>uint32 Unk3300_DGBGNEHDODI = 1;</code>
-       * @param value The unk3300DGBGNEHDODI to set.
+       * <code>uint32 element_reactor_type = 1;</code>
+       * @param value The elementReactorType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300DGBGNEHDODI(int value) {
+      public Builder setElementReactorType(int value) {
         
-        unk3300DGBGNEHDODI_ = value;
+        elementReactorType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_DGBGNEHDODI = 1;</code>
+       * <code>uint32 element_reactor_type = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300DGBGNEHDODI() {
+      public Builder clearElementReactorType() {
         
-        unk3300DGBGNEHDODI_ = 0;
+        elementReactorType_ = 0;
         onChanged();
         return this;
       }
@@ -629,33 +629,33 @@ public final class AbilityMetaElementReactionVisualOuterClass {
         return this;
       }
 
-      private int unk3300OGILJCJPHPB_ ;
+      private int elementReactionType_ ;
       /**
-       * <code>uint32 Unk3300_OGILJCJPHPB = 2;</code>
-       * @return The unk3300OGILJCJPHPB.
+       * <code>uint32 element_reaction_type = 2;</code>
+       * @return The elementReactionType.
        */
       @java.lang.Override
-      public int getUnk3300OGILJCJPHPB() {
-        return unk3300OGILJCJPHPB_;
+      public int getElementReactionType() {
+        return elementReactionType_;
       }
       /**
-       * <code>uint32 Unk3300_OGILJCJPHPB = 2;</code>
-       * @param value The unk3300OGILJCJPHPB to set.
+       * <code>uint32 element_reaction_type = 2;</code>
+       * @param value The elementReactionType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300OGILJCJPHPB(int value) {
+      public Builder setElementReactionType(int value) {
         
-        unk3300OGILJCJPHPB_ = value;
+        elementReactionType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_OGILJCJPHPB = 2;</code>
+       * <code>uint32 element_reaction_type = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300OGILJCJPHPB() {
+      public Builder clearElementReactionType() {
         
-        unk3300OGILJCJPHPB_ = 0;
+        elementReactionType_ = 0;
         onChanged();
         return this;
       }
@@ -727,11 +727,11 @@ public final class AbilityMetaElementReactionVisualOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&AbilityMetaElementReactionVisual.proto" +
-      "\"\214\001\n AbilityMetaElementReactionVisual\022\033\n" +
-      "\023Unk3300_PHKFGIHELFG\030\006 \001(\r\022\033\n\023Unk3300_DG" +
-      "BGNEHDODI\030\001 \001(\r\022\021\n\thit_index\030\016 \001(\005\022\033\n\023Un" +
-      "k3300_OGILJCJPHPB\030\002 \001(\rB\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\"\217\001\n AbilityMetaElementReactionVisual\022\033\n" +
+      "\023element_source_type\030\006 \001(\r\022\034\n\024element_re" +
+      "actor_type\030\001 \001(\r\022\021\n\thit_index\030\016 \001(\005\022\035\n\025e" +
+      "lement_reaction_type\030\002 \001(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -742,7 +742,7 @@ public final class AbilityMetaElementReactionVisualOuterClass {
     internal_static_AbilityMetaElementReactionVisual_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaElementReactionVisual_descriptor,
-        new java.lang.String[] { "Unk3300PHKFGIHELFG", "Unk3300DGBGNEHDODI", "HitIndex", "Unk3300OGILJCJPHPB", });
+        new java.lang.String[] { "ElementSourceType", "ElementReactorType", "HitIndex", "ElementReactionType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

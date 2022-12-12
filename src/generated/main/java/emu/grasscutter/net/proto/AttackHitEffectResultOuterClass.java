@@ -25,10 +25,10 @@ public final class AttackHitEffectResultOuterClass {
     float getUnk3300DABGDGLAIKL();
 
     /**
-     * <code>float Unk3300_JDEFHMKICPF = 10;</code>
-     * @return The unk3300JDEFHMKICPF.
+     * <code>float hit_halt_time_scale = 10;</code>
+     * @return The hitHaltTimeScale.
      */
-    float getUnk3300JDEFHMKICPF();
+    float getHitHaltTimeScale();
 
     /**
      * <code>float Unk3300_ECHOFBLGIIO = 9;</code>
@@ -121,7 +121,7 @@ public final class AttackHitEffectResultOuterClass {
             }
             case 85: {
 
-              unk3300JDEFHMKICPF_ = input.readFloat();
+              hitHaltTimeScale_ = input.readFloat();
               break;
             }
             case 109: {
@@ -172,15 +172,15 @@ public final class AttackHitEffectResultOuterClass {
       return unk3300DABGDGLAIKL_;
     }
 
-    public static final int UNK3300_JDEFHMKICPF_FIELD_NUMBER = 10;
-    private float unk3300JDEFHMKICPF_;
+    public static final int HIT_HALT_TIME_SCALE_FIELD_NUMBER = 10;
+    private float hitHaltTimeScale_;
     /**
-     * <code>float Unk3300_JDEFHMKICPF = 10;</code>
-     * @return The unk3300JDEFHMKICPF.
+     * <code>float hit_halt_time_scale = 10;</code>
+     * @return The hitHaltTimeScale.
      */
     @java.lang.Override
-    public float getUnk3300JDEFHMKICPF() {
-      return unk3300JDEFHMKICPF_;
+    public float getHitHaltTimeScale() {
+      return hitHaltTimeScale_;
     }
 
     public static final int UNK3300_ECHOFBLGIIO_FIELD_NUMBER = 9;
@@ -253,8 +253,8 @@ public final class AttackHitEffectResultOuterClass {
       if (unk3300ECHOFBLGIIO_ != 0F) {
         output.writeFloat(9, unk3300ECHOFBLGIIO_);
       }
-      if (unk3300JDEFHMKICPF_ != 0F) {
-        output.writeFloat(10, unk3300JDEFHMKICPF_);
+      if (hitHaltTimeScale_ != 0F) {
+        output.writeFloat(10, hitHaltTimeScale_);
       }
       if (unk3300DABGDGLAIKL_ != 0F) {
         output.writeFloat(13, unk3300DABGDGLAIKL_);
@@ -284,9 +284,9 @@ public final class AttackHitEffectResultOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(9, unk3300ECHOFBLGIIO_);
       }
-      if (unk3300JDEFHMKICPF_ != 0F) {
+      if (hitHaltTimeScale_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(10, unk3300JDEFHMKICPF_);
+          .computeFloatSize(10, hitHaltTimeScale_);
       }
       if (unk3300DABGDGLAIKL_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
@@ -310,9 +310,9 @@ public final class AttackHitEffectResultOuterClass {
       if (java.lang.Float.floatToIntBits(getUnk3300DABGDGLAIKL())
           != java.lang.Float.floatToIntBits(
               other.getUnk3300DABGDGLAIKL())) return false;
-      if (java.lang.Float.floatToIntBits(getUnk3300JDEFHMKICPF())
+      if (java.lang.Float.floatToIntBits(getHitHaltTimeScale())
           != java.lang.Float.floatToIntBits(
-              other.getUnk3300JDEFHMKICPF())) return false;
+              other.getHitHaltTimeScale())) return false;
       if (java.lang.Float.floatToIntBits(getUnk3300ECHOFBLGIIO())
           != java.lang.Float.floatToIntBits(
               other.getUnk3300ECHOFBLGIIO())) return false;
@@ -337,9 +337,9 @@ public final class AttackHitEffectResultOuterClass {
       hash = (37 * hash) + UNK3300_DABGDGLAIKL_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getUnk3300DABGDGLAIKL());
-      hash = (37 * hash) + UNK3300_JDEFHMKICPF_FIELD_NUMBER;
+      hash = (37 * hash) + HIT_HALT_TIME_SCALE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getUnk3300JDEFHMKICPF());
+          getHitHaltTimeScale());
       hash = (37 * hash) + UNK3300_ECHOFBLGIIO_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getUnk3300ECHOFBLGIIO());
@@ -485,7 +485,7 @@ public final class AttackHitEffectResultOuterClass {
         super.clear();
         unk3300DABGDGLAIKL_ = 0F;
 
-        unk3300JDEFHMKICPF_ = 0F;
+        hitHaltTimeScale_ = 0F;
 
         unk3300ECHOFBLGIIO_ = 0F;
 
@@ -522,7 +522,7 @@ public final class AttackHitEffectResultOuterClass {
       public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult buildPartial() {
         emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult result = new emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult(this);
         result.unk3300DABGDGLAIKL_ = unk3300DABGDGLAIKL_;
-        result.unk3300JDEFHMKICPF_ = unk3300JDEFHMKICPF_;
+        result.hitHaltTimeScale_ = hitHaltTimeScale_;
         result.unk3300ECHOFBLGIIO_ = unk3300ECHOFBLGIIO_;
         result.unk3300LCKECJCKKJK_ = unk3300LCKECJCKKJK_;
         result.unk3300KLNGDAMMFIF_ = unk3300KLNGDAMMFIF_;
@@ -578,8 +578,8 @@ public final class AttackHitEffectResultOuterClass {
         if (other.getUnk3300DABGDGLAIKL() != 0F) {
           setUnk3300DABGDGLAIKL(other.getUnk3300DABGDGLAIKL());
         }
-        if (other.getUnk3300JDEFHMKICPF() != 0F) {
-          setUnk3300JDEFHMKICPF(other.getUnk3300JDEFHMKICPF());
+        if (other.getHitHaltTimeScale() != 0F) {
+          setHitHaltTimeScale(other.getHitHaltTimeScale());
         }
         if (other.getUnk3300ECHOFBLGIIO() != 0F) {
           setUnk3300ECHOFBLGIIO(other.getUnk3300ECHOFBLGIIO());
@@ -653,33 +653,33 @@ public final class AttackHitEffectResultOuterClass {
         return this;
       }
 
-      private float unk3300JDEFHMKICPF_ ;
+      private float hitHaltTimeScale_ ;
       /**
-       * <code>float Unk3300_JDEFHMKICPF = 10;</code>
-       * @return The unk3300JDEFHMKICPF.
+       * <code>float hit_halt_time_scale = 10;</code>
+       * @return The hitHaltTimeScale.
        */
       @java.lang.Override
-      public float getUnk3300JDEFHMKICPF() {
-        return unk3300JDEFHMKICPF_;
+      public float getHitHaltTimeScale() {
+        return hitHaltTimeScale_;
       }
       /**
-       * <code>float Unk3300_JDEFHMKICPF = 10;</code>
-       * @param value The unk3300JDEFHMKICPF to set.
+       * <code>float hit_halt_time_scale = 10;</code>
+       * @param value The hitHaltTimeScale to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300JDEFHMKICPF(float value) {
+      public Builder setHitHaltTimeScale(float value) {
         
-        unk3300JDEFHMKICPF_ = value;
+        hitHaltTimeScale_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float Unk3300_JDEFHMKICPF = 10;</code>
+       * <code>float hit_halt_time_scale = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300JDEFHMKICPF() {
+      public Builder clearHitHaltTimeScale() {
         
-        unk3300JDEFHMKICPF_ = 0F;
+        hitHaltTimeScale_ = 0F;
         onChanged();
         return this;
       }
@@ -876,7 +876,7 @@ public final class AttackHitEffectResultOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033AttackHitEffectResult.proto\"\305\001\n\025Attack" +
       "HitEffectResult\022\033\n\023Unk3300_DABGDGLAIKL\030\r" +
-      " \001(\002\022\033\n\023Unk3300_JDEFHMKICPF\030\n \001(\002\022\033\n\023Unk" +
+      " \001(\002\022\033\n\023hit_halt_time_scale\030\n \001(\002\022\033\n\023Unk" +
       "3300_ECHOFBLGIIO\030\t \001(\002\022\033\n\023Unk3300_LCKECJ" +
       "CKKJK\030\010 \001(\r\022\033\n\023Unk3300_KLNGDAMMFIF\030\001 \001(\r" +
       "\022\033\n\023Unk3300_MNGCOAIGGAL\030\003 \001(\002B\033\n\031emu.gra" +
@@ -891,7 +891,7 @@ public final class AttackHitEffectResultOuterClass {
     internal_static_AttackHitEffectResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AttackHitEffectResult_descriptor,
-        new java.lang.String[] { "Unk3300DABGDGLAIKL", "Unk3300JDEFHMKICPF", "Unk3300ECHOFBLGIIO", "Unk3300LCKECJCKKJK", "Unk3300KLNGDAMMFIF", "Unk3300MNGCOAIGGAL", });
+        new java.lang.String[] { "Unk3300DABGDGLAIKL", "HitHaltTimeScale", "Unk3300ECHOFBLGIIO", "Unk3300LCKECJCKKJK", "Unk3300KLNGDAMMFIF", "Unk3300MNGCOAIGGAL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

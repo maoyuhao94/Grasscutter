@@ -31,22 +31,22 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
     int getTriggerEntityId();
 
     /**
-     * <code>uint32 Unk3300_PHKFGIHELFG = 13;</code>
-     * @return The unk3300PHKFGIHELFG.
+     * <code>uint32 element_source_type = 13;</code>
+     * @return The elementSourceType.
      */
-    int getUnk3300PHKFGIHELFG();
+    int getElementSourceType();
 
     /**
-     * <code>uint32 Unk3300_OGILJCJPHPB = 12;</code>
-     * @return The unk3300OGILJCJPHPB.
+     * <code>uint32 element_reaction_type = 12;</code>
+     * @return The elementReactionType.
      */
-    int getUnk3300OGILJCJPHPB();
+    int getElementReactionType();
 
     /**
-     * <code>uint32 Unk3300_DGBGNEHDODI = 2;</code>
-     * @return The unk3300DGBGNEHDODI.
+     * <code>uint32 element_reactor_type = 2;</code>
+     * @return The elementReactorType.
      */
-    int getUnk3300DGBGNEHDODI();
+    int getElementReactorType();
   }
   /**
    * Protobuf type {@code AbilityMetaTriggerElementReaction}
@@ -95,7 +95,7 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
               break;
             case 16: {
 
-              unk3300DGBGNEHDODI_ = input.readUInt32();
+              elementReactorType_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -105,12 +105,12 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
             }
             case 96: {
 
-              unk3300OGILJCJPHPB_ = input.readUInt32();
+              elementReactionType_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              unk3300PHKFGIHELFG_ = input.readUInt32();
+              elementSourceType_ = input.readUInt32();
               break;
             }
             case 112: {
@@ -172,37 +172,37 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
       return triggerEntityId_;
     }
 
-    public static final int UNK3300_PHKFGIHELFG_FIELD_NUMBER = 13;
-    private int unk3300PHKFGIHELFG_;
+    public static final int ELEMENT_SOURCE_TYPE_FIELD_NUMBER = 13;
+    private int elementSourceType_;
     /**
-     * <code>uint32 Unk3300_PHKFGIHELFG = 13;</code>
-     * @return The unk3300PHKFGIHELFG.
+     * <code>uint32 element_source_type = 13;</code>
+     * @return The elementSourceType.
      */
     @java.lang.Override
-    public int getUnk3300PHKFGIHELFG() {
-      return unk3300PHKFGIHELFG_;
+    public int getElementSourceType() {
+      return elementSourceType_;
     }
 
-    public static final int UNK3300_OGILJCJPHPB_FIELD_NUMBER = 12;
-    private int unk3300OGILJCJPHPB_;
+    public static final int ELEMENT_REACTION_TYPE_FIELD_NUMBER = 12;
+    private int elementReactionType_;
     /**
-     * <code>uint32 Unk3300_OGILJCJPHPB = 12;</code>
-     * @return The unk3300OGILJCJPHPB.
+     * <code>uint32 element_reaction_type = 12;</code>
+     * @return The elementReactionType.
      */
     @java.lang.Override
-    public int getUnk3300OGILJCJPHPB() {
-      return unk3300OGILJCJPHPB_;
+    public int getElementReactionType() {
+      return elementReactionType_;
     }
 
-    public static final int UNK3300_DGBGNEHDODI_FIELD_NUMBER = 2;
-    private int unk3300DGBGNEHDODI_;
+    public static final int ELEMENT_REACTOR_TYPE_FIELD_NUMBER = 2;
+    private int elementReactorType_;
     /**
-     * <code>uint32 Unk3300_DGBGNEHDODI = 2;</code>
-     * @return The unk3300DGBGNEHDODI.
+     * <code>uint32 element_reactor_type = 2;</code>
+     * @return The elementReactorType.
      */
     @java.lang.Override
-    public int getUnk3300DGBGNEHDODI() {
-      return unk3300DGBGNEHDODI_;
+    public int getElementReactorType() {
+      return elementReactorType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,17 +219,17 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300DGBGNEHDODI_ != 0) {
-        output.writeUInt32(2, unk3300DGBGNEHDODI_);
+      if (elementReactorType_ != 0) {
+        output.writeUInt32(2, elementReactorType_);
       }
       if (hitIndex_ != 0) {
         output.writeInt32(7, hitIndex_);
       }
-      if (unk3300OGILJCJPHPB_ != 0) {
-        output.writeUInt32(12, unk3300OGILJCJPHPB_);
+      if (elementReactionType_ != 0) {
+        output.writeUInt32(12, elementReactionType_);
       }
-      if (unk3300PHKFGIHELFG_ != 0) {
-        output.writeUInt32(13, unk3300PHKFGIHELFG_);
+      if (elementSourceType_ != 0) {
+        output.writeUInt32(13, elementSourceType_);
       }
       if (triggerEntityId_ != 0) {
         output.writeUInt32(14, triggerEntityId_);
@@ -243,21 +243,21 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300DGBGNEHDODI_ != 0) {
+      if (elementReactorType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, unk3300DGBGNEHDODI_);
+          .computeUInt32Size(2, elementReactorType_);
       }
       if (hitIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(7, hitIndex_);
       }
-      if (unk3300OGILJCJPHPB_ != 0) {
+      if (elementReactionType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, unk3300OGILJCJPHPB_);
+          .computeUInt32Size(12, elementReactionType_);
       }
-      if (unk3300PHKFGIHELFG_ != 0) {
+      if (elementSourceType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, unk3300PHKFGIHELFG_);
+          .computeUInt32Size(13, elementSourceType_);
       }
       if (triggerEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -282,12 +282,12 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
           != other.getHitIndex()) return false;
       if (getTriggerEntityId()
           != other.getTriggerEntityId()) return false;
-      if (getUnk3300PHKFGIHELFG()
-          != other.getUnk3300PHKFGIHELFG()) return false;
-      if (getUnk3300OGILJCJPHPB()
-          != other.getUnk3300OGILJCJPHPB()) return false;
-      if (getUnk3300DGBGNEHDODI()
-          != other.getUnk3300DGBGNEHDODI()) return false;
+      if (getElementSourceType()
+          != other.getElementSourceType()) return false;
+      if (getElementReactionType()
+          != other.getElementReactionType()) return false;
+      if (getElementReactorType()
+          != other.getElementReactorType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -303,12 +303,12 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
       hash = (53 * hash) + getHitIndex();
       hash = (37 * hash) + TRIGGER_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTriggerEntityId();
-      hash = (37 * hash) + UNK3300_PHKFGIHELFG_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300PHKFGIHELFG();
-      hash = (37 * hash) + UNK3300_OGILJCJPHPB_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300OGILJCJPHPB();
-      hash = (37 * hash) + UNK3300_DGBGNEHDODI_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300DGBGNEHDODI();
+      hash = (37 * hash) + ELEMENT_SOURCE_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementSourceType();
+      hash = (37 * hash) + ELEMENT_REACTION_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementReactionType();
+      hash = (37 * hash) + ELEMENT_REACTOR_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementReactorType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,11 +446,11 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
 
         triggerEntityId_ = 0;
 
-        unk3300PHKFGIHELFG_ = 0;
+        elementSourceType_ = 0;
 
-        unk3300OGILJCJPHPB_ = 0;
+        elementReactionType_ = 0;
 
-        unk3300DGBGNEHDODI_ = 0;
+        elementReactorType_ = 0;
 
         return this;
       }
@@ -480,9 +480,9 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
         emu.grasscutter.net.proto.AbilityMetaTriggerElementReactionOuterClass.AbilityMetaTriggerElementReaction result = new emu.grasscutter.net.proto.AbilityMetaTriggerElementReactionOuterClass.AbilityMetaTriggerElementReaction(this);
         result.hitIndex_ = hitIndex_;
         result.triggerEntityId_ = triggerEntityId_;
-        result.unk3300PHKFGIHELFG_ = unk3300PHKFGIHELFG_;
-        result.unk3300OGILJCJPHPB_ = unk3300OGILJCJPHPB_;
-        result.unk3300DGBGNEHDODI_ = unk3300DGBGNEHDODI_;
+        result.elementSourceType_ = elementSourceType_;
+        result.elementReactionType_ = elementReactionType_;
+        result.elementReactorType_ = elementReactorType_;
         onBuilt();
         return result;
       }
@@ -537,14 +537,14 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
         if (other.getTriggerEntityId() != 0) {
           setTriggerEntityId(other.getTriggerEntityId());
         }
-        if (other.getUnk3300PHKFGIHELFG() != 0) {
-          setUnk3300PHKFGIHELFG(other.getUnk3300PHKFGIHELFG());
+        if (other.getElementSourceType() != 0) {
+          setElementSourceType(other.getElementSourceType());
         }
-        if (other.getUnk3300OGILJCJPHPB() != 0) {
-          setUnk3300OGILJCJPHPB(other.getUnk3300OGILJCJPHPB());
+        if (other.getElementReactionType() != 0) {
+          setElementReactionType(other.getElementReactionType());
         }
-        if (other.getUnk3300DGBGNEHDODI() != 0) {
-          setUnk3300DGBGNEHDODI(other.getUnk3300DGBGNEHDODI());
+        if (other.getElementReactorType() != 0) {
+          setElementReactorType(other.getElementReactorType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -637,95 +637,95 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
         return this;
       }
 
-      private int unk3300PHKFGIHELFG_ ;
+      private int elementSourceType_ ;
       /**
-       * <code>uint32 Unk3300_PHKFGIHELFG = 13;</code>
-       * @return The unk3300PHKFGIHELFG.
+       * <code>uint32 element_source_type = 13;</code>
+       * @return The elementSourceType.
        */
       @java.lang.Override
-      public int getUnk3300PHKFGIHELFG() {
-        return unk3300PHKFGIHELFG_;
+      public int getElementSourceType() {
+        return elementSourceType_;
       }
       /**
-       * <code>uint32 Unk3300_PHKFGIHELFG = 13;</code>
-       * @param value The unk3300PHKFGIHELFG to set.
+       * <code>uint32 element_source_type = 13;</code>
+       * @param value The elementSourceType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300PHKFGIHELFG(int value) {
+      public Builder setElementSourceType(int value) {
         
-        unk3300PHKFGIHELFG_ = value;
+        elementSourceType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_PHKFGIHELFG = 13;</code>
+       * <code>uint32 element_source_type = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300PHKFGIHELFG() {
+      public Builder clearElementSourceType() {
         
-        unk3300PHKFGIHELFG_ = 0;
+        elementSourceType_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk3300OGILJCJPHPB_ ;
+      private int elementReactionType_ ;
       /**
-       * <code>uint32 Unk3300_OGILJCJPHPB = 12;</code>
-       * @return The unk3300OGILJCJPHPB.
+       * <code>uint32 element_reaction_type = 12;</code>
+       * @return The elementReactionType.
        */
       @java.lang.Override
-      public int getUnk3300OGILJCJPHPB() {
-        return unk3300OGILJCJPHPB_;
+      public int getElementReactionType() {
+        return elementReactionType_;
       }
       /**
-       * <code>uint32 Unk3300_OGILJCJPHPB = 12;</code>
-       * @param value The unk3300OGILJCJPHPB to set.
+       * <code>uint32 element_reaction_type = 12;</code>
+       * @param value The elementReactionType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300OGILJCJPHPB(int value) {
+      public Builder setElementReactionType(int value) {
         
-        unk3300OGILJCJPHPB_ = value;
+        elementReactionType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_OGILJCJPHPB = 12;</code>
+       * <code>uint32 element_reaction_type = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300OGILJCJPHPB() {
+      public Builder clearElementReactionType() {
         
-        unk3300OGILJCJPHPB_ = 0;
+        elementReactionType_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk3300DGBGNEHDODI_ ;
+      private int elementReactorType_ ;
       /**
-       * <code>uint32 Unk3300_DGBGNEHDODI = 2;</code>
-       * @return The unk3300DGBGNEHDODI.
+       * <code>uint32 element_reactor_type = 2;</code>
+       * @return The elementReactorType.
        */
       @java.lang.Override
-      public int getUnk3300DGBGNEHDODI() {
-        return unk3300DGBGNEHDODI_;
+      public int getElementReactorType() {
+        return elementReactorType_;
       }
       /**
-       * <code>uint32 Unk3300_DGBGNEHDODI = 2;</code>
-       * @param value The unk3300DGBGNEHDODI to set.
+       * <code>uint32 element_reactor_type = 2;</code>
+       * @param value The elementReactorType to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300DGBGNEHDODI(int value) {
+      public Builder setElementReactorType(int value) {
         
-        unk3300DGBGNEHDODI_ = value;
+        elementReactorType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_DGBGNEHDODI = 2;</code>
+       * <code>uint32 element_reactor_type = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300DGBGNEHDODI() {
+      public Builder clearElementReactorType() {
         
-        unk3300DGBGNEHDODI_ = 0;
+        elementReactorType_ = 0;
         onChanged();
         return this;
       }
@@ -797,12 +797,12 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'AbilityMetaTriggerElementReaction.prot" +
-      "o\"\250\001\n!AbilityMetaTriggerElementReaction\022" +
+      "o\"\253\001\n!AbilityMetaTriggerElementReaction\022" +
       "\021\n\thit_index\030\007 \001(\005\022\031\n\021trigger_entity_id\030" +
-      "\016 \001(\r\022\033\n\023Unk3300_PHKFGIHELFG\030\r \001(\r\022\033\n\023Un" +
-      "k3300_OGILJCJPHPB\030\014 \001(\r\022\033\n\023Unk3300_DGBGN" +
-      "EHDODI\030\002 \001(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\016 \001(\r\022\033\n\023element_source_type\030\r \001(\r\022\035\n\025el" +
+      "ement_reaction_type\030\014 \001(\r\022\034\n\024element_rea" +
+      "ctor_type\030\002 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -813,7 +813,7 @@ public final class AbilityMetaTriggerElementReactionOuterClass {
     internal_static_AbilityMetaTriggerElementReaction_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaTriggerElementReaction_descriptor,
-        new java.lang.String[] { "HitIndex", "TriggerEntityId", "Unk3300PHKFGIHELFG", "Unk3300OGILJCJPHPB", "Unk3300DGBGNEHDODI", });
+        new java.lang.String[] { "HitIndex", "TriggerEntityId", "ElementSourceType", "ElementReactionType", "ElementReactorType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
